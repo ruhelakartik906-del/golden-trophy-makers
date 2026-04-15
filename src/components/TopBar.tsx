@@ -18,7 +18,7 @@ const TopBar = () => (
         </a>
       </div>
       <div className="flex items-center gap-4">
-        <span className="flex items-center gap-1.5 text-muted-foreground">
+        <span className="flex items-center gap-1.5 text-secondary-foreground">
           <MapPin className="w-3 h-3 text-primary" /> Laxmi Nagar, New Delhi
         </span>
         <a
@@ -27,7 +27,7 @@ const TopBar = () => (
           rel="noopener noreferrer"
           className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-xs font-medium hover:bg-gold-dark transition-colors"
         >
-          WhatsApp Us
+          Chat Now
         </a>
       </div>
     </div>
