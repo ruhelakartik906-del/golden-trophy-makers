@@ -24,24 +24,8 @@ const Index = () => (
     <CategoriesSlider />
     <AboutCompany />
 
-    <ParallaxSection bgImage={heroTrophy} className="py-32">
-      <div className="container text-center">
-        <h2 className="font-heading text-3xl md:text-5xl font-bold text-secondary-foreground mb-6">
-          Custom Trophy <span className="text-primary">Manufacturer</span>
-        </h2>
-        <p className="text-secondary-foreground/70 mb-10 max-w-2xl mx-auto text-lg">
-          Premium quality trophies and awards designed and manufactured to celebrate every achievement
-        </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <Link to="/contact" className="bg-primary text-primary-foreground px-10 py-4 rounded-full font-heading font-semibold hover:bg-gold-dark transition-all hover:scale-105">
-            Get Quote
-          </Link>
-          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="border-2 border-primary text-primary px-10 py-4 rounded-full font-heading font-semibold hover:bg-primary hover:text-primary-foreground transition-all hover:scale-105">
-            Contact Now
-          </a>
-        </div>
-      </div>
-    </ParallaxSection>
+
+
 
     <FeaturedProducts />
     <WhyChooseUs />
