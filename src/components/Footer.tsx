@@ -9,8 +9,7 @@ const Footer = () => (
         {/* Logo & About */}
         <div className="sm:col-span-2 md:col-span-1">
           <div className="inline-flex items-center gap-3 mb-5 bg-white/10 rounded-xl px-4 py-3">
-            <img src="/images/logo.png" alt="Xpert Awards" className="h-10 w-auto" />
-            <span className="font-heading font-bold text-lg text-primary">Xpert Awards</span>
+            <img src="/images/logo.png" alt="Xpert Awards" className="h-12 w-auto" />
           </div>
           <p className="text-white/70 text-sm leading-relaxed mb-6">
             Creating exceptional awards and recognition pieces that celebrate achievements and inspire excellence.
