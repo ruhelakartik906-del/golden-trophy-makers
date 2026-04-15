@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
@@ -28,12 +28,12 @@ const Header = () => {
           : "bg-background/80 backdrop-blur-sm"
       }`}
     >
-      <div className="container flex items-center justify-between py-3">
-        <Link to="/" className="flex items-center gap-3">
-          <img src="/images/logo.png" alt="Xpert Awards" className="h-12 w-auto" />
+      <div className="container flex items-center justify-between py-2 md:py-3">
+        <Link to="/" className="flex items-center gap-2 md:gap-3">
+          <img src="/images/logo.png" alt="Xpert Awards" className="h-10 md:h-12 w-auto" />
           <div>
-            <span className="font-heading font-bold text-xl text-primary block leading-tight">XPERT AWARDS</span>
-            <span className="text-[10px] text-muted-foreground font-heading tracking-wider uppercase">Premium Awards</span>
+            <span className="font-heading font-bold text-base md:text-xl text-primary block leading-tight">XPERT AWARDS</span>
+            <span className="text-[9px] md:text-[10px] text-muted-foreground font-heading tracking-wider uppercase">Premium Awards</span>
           </div>
         </Link>
 
@@ -68,18 +68,18 @@ const Header = () => {
 
       {open && (
         <motion.nav
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="lg:hidden bg-background border-t border-border"
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          className="lg:hidden bg-background border-t border-border overflow-hidden"
         >
-          <div className="container py-4 flex flex-col gap-3">
+          <div className="container py-4 flex flex-col gap-1">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 onClick={() => setOpen(false)}
-                className={`font-heading font-medium text-sm py-2 transition-colors hover:text-primary ${
-                  pathname === item.path ? "text-primary" : "text-foreground"
+                className={`font-heading font-medium text-sm py-3 px-4 rounded-lg transition-colors hover:bg-muted hover:text-primary ${
+                  pathname === item.path ? "text-primary bg-primary/10" : "text-foreground"
                 }`}
               >
                 {item.label}
@@ -88,7 +88,7 @@ const Header = () => {
             <Link
               to="/contact"
               onClick={() => setOpen(false)}
-              className="bg-primary text-primary-foreground px-6 py-2.5 rounded-full font-heading font-semibold text-sm text-center hover:bg-gold-dark transition-colors mt-2"
+              className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-heading font-semibold text-sm text-center hover:bg-gold-dark transition-colors mt-3"
             >
               Get Quote
             </Link>
