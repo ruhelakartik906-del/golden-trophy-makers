@@ -29,12 +29,8 @@ const Header = () => {
       }`}
     >
       <div className="container flex items-center justify-between py-2 md:py-3">
-        <Link to="/" className="flex items-center gap-2 md:gap-3">
-          <img src="/images/logo.png" alt="Xpert Awards" className="h-10 md:h-12 w-auto" />
-          <div>
-            <span className="font-heading font-bold text-base md:text-xl text-primary block leading-tight">XPERT AWARDS</span>
-            <span className="text-[9px] md:text-[10px] text-muted-foreground font-heading tracking-wider uppercase">Premium Awards</span>
-          </div>
+        <Link to="/" className="flex items-center">
+          <img src="/images/logo.png" alt="Xpert Awards - Corporate Gift, Trophies, Custom Awards" className="h-12 md:h-14 w-auto" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">
