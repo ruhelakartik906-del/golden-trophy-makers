@@ -4,13 +4,13 @@ import { PHONE_1, PHONE_2, EMAIL, ADDRESS } from "@/lib/constants";
 
 const Footer = () => (
   <footer className="bg-[hsl(175,35%,25%)] text-white">
-    <div className="container py-16">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div className="container py-10 md:py-16 px-4 sm:px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
         {/* Logo & About */}
-        <div>
-          <div className="inline-flex items-center gap-3 mb-5 bg-white/10 rounded-xl px-5 py-3">
+        <div className="sm:col-span-2 md:col-span-1">
+          <div className="inline-flex items-center gap-3 mb-5 bg-white/10 rounded-xl px-4 py-3">
             <img src="/images/logo.png" alt="Xpert Awards" className="h-10 w-auto" />
-            <span className="font-heading font-bold text-xl text-primary">Xpert Awards</span>
+            <span className="font-heading font-bold text-lg text-primary">Xpert Awards</span>
           </div>
           <p className="text-white/70 text-sm leading-relaxed mb-6">
             Creating exceptional awards and recognition pieces that celebrate achievements and inspire excellence.
@@ -29,7 +29,7 @@ const Footer = () => (
         </div>
 
         {/* Quick Links */}
-        <div className="text-center">
+        <div>
           <h4 className="font-heading font-bold text-lg mb-5">Quick Links</h4>
           <ul className="space-y-3">
             {[
@@ -37,6 +37,7 @@ const Footer = () => (
               { label: "About Us", to: "/about" },
               { label: "Products", to: "/products" },
               { label: "Gallery", to: "/gallery" },
+              { label: "FAQ", to: "/faq" },
               { label: "Contact", to: "/contact" },
               { label: "Privacy Policy", to: "/privacy" },
             ].map((link) => (
@@ -55,7 +56,11 @@ const Footer = () => (
           <div className="space-y-4 text-sm">
             <a href={`tel:${PHONE_1}`} className="flex items-center gap-3 text-white/70 hover:text-primary transition-colors">
               <Phone className="w-4 h-4 text-primary shrink-0" />
-              {PHONE_1}, {PHONE_2}
+              +91 {PHONE_1}
+            </a>
+            <a href={`tel:${PHONE_2}`} className="flex items-center gap-3 text-white/70 hover:text-primary transition-colors">
+              <Phone className="w-4 h-4 text-primary shrink-0" />
+              +91 {PHONE_2}
             </a>
             <a href={`mailto:${EMAIL}`} className="flex items-center gap-3 text-white/70 hover:text-primary transition-colors">
               <Mail className="w-4 h-4 text-primary shrink-0" />
@@ -72,7 +77,7 @@ const Footer = () => (
 
     {/* Bottom Bar */}
     <div className="border-t border-white/10">
-      <div className="container py-5 text-center text-sm text-white/50">
+      <div className="container py-5 text-center text-xs sm:text-sm text-white/50 px-4">
         © {new Date().getFullYear()} Xpert Awards. All rights reserved.
       </div>
     </div>
