@@ -436,6 +436,14 @@ export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
     { id: "GS-4531", name: "Gift Set - GS4531", image: "/images/products/corporate/GS-4531.jpg", size: 'Pen + Leather Keychain Set (Brown)' },
     { id: "GS-4532", name: "Gift Set - GS4532", image: "/images/products/corporate/GS-4532.jpg", size: 'Card Holder + Pen Set (Red)' },
     { id: "GS-4533", name: "Gift Set - GS4533", image: "/images/products/corporate/GS-4533.jpg", size: 'Wallet + Pen Set (Checkered)' },
+    { id: "GS-4534", name: "Gift Set - GS4534", image: "/images/products/corporate/GS-4534.jpg", size: 'Credit Card Holder + Pen Set' },
+    { id: "GS-4535", name: "Gift Set - GS4535", image: "/images/products/corporate/GS-4535.jpg", size: 'Multipurpose Wallet + Pen (Black)' },
+    { id: "GS-4536", name: "Gift Set - GS4536", image: "/images/products/corporate/GS-4536.jpg", size: 'Multipurpose Wallet + Pen (Brown)' },
+    { id: "GS-4550", name: "Gift Set - GS4550", image: "/images/products/corporate/GS-4550.jpg", size: 'Pen + Card Holder + Keychain Set' },
+    { id: "GS-4555", name: "Gift Set - GS4555", image: "/images/products/corporate/GS-4555.jpg", size: 'Card Holder + Pen + Keychain (Brown)' },
+    { id: "GS-4556", name: "Gift Set - GS4556", image: "/images/products/corporate/GS-4556.jpg", size: 'Card Holder + Pen + Keychain (Black)' },
+    { id: "GS-4557", name: "Gift Set - GS4557", image: "/images/products/corporate/GS-4557.jpg", size: 'Notebook A5 + Pen + Keychain (Orange)' },
+    { id: "GS-4558", name: "Gift Set - GS4558", image: "/images/products/corporate/GS-4558.jpg", size: 'Notebook A5 + Pen + Keychain (Blue)' },
   ],
 };
 
