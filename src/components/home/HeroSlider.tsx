@@ -2,22 +2,21 @@ import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { WHATSAPP_URL } from "@/lib/constants";
-import { heroTrophy, woodenTrophy, metalTrophy } from "@/lib/images";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: heroTrophy,
+    bg: "/images/hero-bg-1.jpg",
     headline: "Premium Trophy Manufacturer in India",
     sub: "Custom Awards • Corporate Trophies • Sports Medals",
   },
   {
-    image: woodenTrophy,
+    bg: "/images/hero-bg-2.jpg",
     headline: "Celebrate Success with Premium Awards",
     sub: "Handcrafted Excellence for Every Achievement",
   },
   {
-    image: metalTrophy,
+    bg: "/images/hero-bg-3.jpg",
     headline: "Bulk Orders at Best Prices",
     sub: "Serving Schools • Corporates • Government Events",
   },
@@ -46,11 +45,11 @@ const HeroSlider = () => {
           className="absolute inset-0"
         >
           <img
-            src={slides[current].image}
+            src={slides[current].bg}
             alt={slides[current].headline}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/75 to-secondary/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 via-secondary/50 to-transparent" />
         </motion.div>
       </AnimatePresence>
 
