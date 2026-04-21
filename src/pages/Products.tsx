@@ -21,7 +21,7 @@ const ProductsPage = () => (
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {CATEGORIES.map((cat) => (
-            <div key={cat.slug} className="group bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border">
+            <Link key={cat.slug} to={`/products/${cat.slug}`} className="group bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border block">
               <div className="aspect-square overflow-hidden">
                 <img
                   src={categoryImages[cat.slug]}
@@ -38,23 +38,18 @@ const ProductsPage = () => (
                 <p className="text-xs text-muted-foreground mb-4"><strong>Material:</strong> {cat.material}</p>
                 <p className="text-xs text-primary font-medium mb-4">✓ Customization Available</p>
                 <div className="flex gap-3">
-                  <Link
-                    to={`/products/${cat.slug}`}
-                    className="flex-1 bg-primary text-primary-foreground py-2.5 rounded-lg font-heading font-medium text-sm text-center hover:bg-gold-dark transition-colors"
-                  >
+                  <span className="flex-1 bg-primary text-primary-foreground py-2.5 rounded-lg font-heading font-medium text-sm text-center hover:bg-gold-dark transition-colors">
                     View Details
-                  </Link>
-                  <a
-                    href={WHATSAPP_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 border border-primary text-primary py-2.5 rounded-lg font-heading font-medium text-sm text-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                  </span>
+                  <span
+                    onClick={(e) => { e.preventDefault(); window.open(WHATSAPP_URL, '_blank'); }}
+                    className="flex-1 border border-primary text-primary py-2.5 rounded-lg font-heading font-medium text-sm text-center hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer"
                   >
                     Inquire Now
-                  </a>
+                  </span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
