@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Layout from "@/components/Layout";
 import { useParams, Link } from "react-router-dom";
 import { CATEGORIES, WHATSAPP_URL, PHONE_1, PRODUCT_ITEMS } from "@/lib/constants";
@@ -6,11 +6,17 @@ import { categoryImages } from "@/lib/images";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
+const ITEMS_PER_PAGE = 12;
+
 const ProductDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const category = CATEGORIES.find((c) => c.slug === slug);
   const items = slug ? PRODUCT_ITEMS[slug] || [] : [];
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
+
+  const visibleItems = useMemo(() => items.slice(0, visibleCount), [items, visibleCount]);
+  const hasMore = visibleCount < items.length;
 
   const navigate = (dir: number) => {
     if (lightbox === null) return;
@@ -92,8 +98,8 @@ const ProductDetail = () => {
                 All {category.title} Models <span className="text-muted-foreground font-normal text-base">({items.length} products)</span>
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
-                {items.map((item, i) => (
-                  <AnimatedSection key={item.id} delay={i * 0.05}>
+                {visibleItems.map((item, i) => (
+                  <AnimatedSection key={item.id} delay={Math.min(i * 0.05, 0.6)}>
                     <button
                       onClick={() => setLightbox(i)}
                       className="group bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border w-full text-left"
@@ -115,6 +121,16 @@ const ProductDetail = () => {
                   </AnimatedSection>
                 ))}
               </div>
+              {hasMore && (
+                <div className="text-center mt-10">
+                  <button
+                    onClick={() => setVisibleCount((prev) => prev + ITEMS_PER_PAGE)}
+                    className="bg-primary text-primary-foreground px-8 py-3 rounded-full font-heading font-semibold text-sm hover:bg-gold-dark transition-colors"
+                  >
+                    Load More ({items.length - visibleCount} remaining)
+                  </button>
+                </div>
+              )}
             </>
           ) : (
             <div className="text-center py-12">
