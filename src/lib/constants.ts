@@ -132,7 +132,12 @@ export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
     { id: "TRO-3810", name: "TRO - 3810", image: "/images/products/wooden/TRO-3810.jpg", size: '12"x9.5" inch' },
     { id: "TRO-3812", name: "TRO - 3812", image: "/images/products/wooden/TRO-3812.jpg", size: '10"x10" inch' },
   ],
-  "acrylic-trophy": [],
+  "acrylic-trophy": [
+    { id: "TRO-A1", name: "TRO - A1", image: "/images/products/acrylic/TRO-A1.jpg", size: '8.5"x3.5" inch' },
+    { id: "TRO-A2", name: "TRO - A2", image: "/images/products/acrylic/TRO-A2.jpg", size: '7.5"x3.75" inch' },
+    { id: "TRO-A3", name: "TRO - A3", image: "/images/products/acrylic/TRO-A3.jpg", size: '7"x5.25" inch' },
+    { id: "TRO-A4", name: "TRO - A4", image: "/images/products/acrylic/TRO-A4.jpg", size: '8.5"x4.5" inch' },
+  ],
   "fiber-trophy": [],
   "metal-trophy": [],
   "sports-medals": [],
