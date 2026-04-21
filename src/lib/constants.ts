@@ -419,7 +419,16 @@ export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
     { id: "TRO-M7126", name: "TRO - M7126", image: "/images/products/metal/TRO-M7126.jpg", size: '12.5" inch' },
   ],
   "sports-medals": [],
-  "corporate-gifts": [],
+  "corporate-gifts": [
+    { id: "TT-3476", name: "Table Top Organizer - TT3476", image: "/images/products/corporate/TT-3476.jpg", size: 'Wooden Desktop Organizer' },
+    { id: "TT-3490", name: "Table Top Organizer - TT3490", image: "/images/products/corporate/TT-3490.jpg", size: 'Wooden Pen & Card Holder' },
+    { id: "TT-3491", name: "Table Top Organizer - TT3491", image: "/images/products/corporate/TT-3491.jpg", size: 'Modern Desktop Set' },
+    { id: "TT-3492", name: "Table Top Organizer - TT3492", image: "/images/products/corporate/TT-3492.jpg", size: 'Wooden Pen & Phone Stand' },
+    { id: "TT-3493", name: "Table Top Organizer - TT3493", image: "/images/products/corporate/TT-3493.jpg", size: 'Premium Desk Organizer with Clock' },
+    { id: "TT-3494", name: "Table Top Organizer - TT3494", image: "/images/products/corporate/TT-3494.jpg", size: 'Executive Desk Organizer with Clock' },
+    { id: "GS-4507", name: "Gift Set - GS4507", image: "/images/products/corporate/GS-4507.jpg", size: 'Notebook A5 + Pen Set' },
+    { id: "GS-4515", name: "Gift Set - GS4515", image: "/images/products/corporate/GS-4515.jpg", size: 'Photo Frame 6"x4" + Pen Set' },
+  ],
 };
 
 export const CITIES = [
