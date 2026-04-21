@@ -333,7 +333,16 @@ export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
     { id: "TRO-F707", name: "TRO - F707", image: "/images/products/fiber/TRO-F707.jpg", size: '11" inch' },
     { id: "TRO-F708", name: "TRO - F708", image: "/images/products/fiber/TRO-F708.jpg", size: '11" inch' },
   ],
-  "metal-trophy": [],
+  "metal-trophy": [
+    { id: "TRO-M56", name: "TRO - M56", image: "/images/products/metal/TRO-M56.jpg", size: '4x13.75" inch' },
+    { id: "TRO-M367", name: "TRO - M367", image: "/images/products/metal/TRO-M367.jpg", size: '4x12" inch' },
+    { id: "TRO-M371", name: "TRO - M371", image: "/images/products/metal/TRO-M371.jpg", size: '4x12" inch' },
+    { id: "TRO-M372", name: "TRO - M372", image: "/images/products/metal/TRO-M372.jpg", size: '7.25" inch' },
+    { id: "TRO-M373", name: "TRO - M373", image: "/images/products/metal/TRO-M373.jpg", size: '7" inch' },
+    { id: "TRO-M374", name: "TRO - M374", image: "/images/products/metal/TRO-M374.jpg", size: '13" inch' },
+    { id: "TRO-M348", name: "TRO - M348", image: "/images/products/metal/TRO-M348.jpg", size: '11" inch' },
+    { id: "TRO-M383", name: "TRO - M383", image: "/images/products/metal/TRO-M383.jpg", size: 'A 13" B 11.5" C 10" inch' },
+  ],
   "sports-medals": [],
   "corporate-gifts": [],
 };
