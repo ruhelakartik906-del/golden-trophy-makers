@@ -1,5 +1,4 @@
 import { Clock, Shield, Palette, Truck } from "lucide-react";
-import { categoryImages } from "@/lib/images";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const stats = [
@@ -39,11 +38,17 @@ const AboutCompany = () => (
           </div>
         </AnimatedSection>
         <AnimatedSection direction="right" delay={0.2}>
-          <div className="grid grid-cols-2 gap-4">
-            <img src={categoryImages["wooden-trophy"]} alt="Wooden Trophy" loading="lazy" className="rounded-2xl shadow-xl w-full" />
-            <img src={categoryImages["acrylic-trophy"]} alt="Acrylic Trophy" loading="lazy" className="rounded-2xl shadow-xl w-full mt-12" />
-            <img src={categoryImages["metal-trophy"]} alt="Metal Trophy" loading="lazy" className="rounded-2xl shadow-xl w-full -mt-8" />
-            <img src={categoryImages["sports-medals"]} alt="Sports Medals" loading="lazy" className="rounded-2xl shadow-xl w-full mt-4" />
+          <div className="relative">
+            <img
+              src="/images/about-company.jpg"
+              alt="Xpert Awards Trophy Collection"
+              loading="lazy"
+              className="rounded-2xl shadow-2xl w-full"
+            />
+            <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-2xl shadow-xl hidden md:block">
+              <p className="font-heading font-bold text-3xl">18+</p>
+              <p className="text-sm font-medium">Years of Excellence</p>
+            </div>
           </div>
         </AnimatedSection>
       </div>

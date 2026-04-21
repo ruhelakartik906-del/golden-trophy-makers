@@ -1,11 +1,14 @@
 import Layout from "@/components/Layout";
-import { categoryImages } from "@/lib/images";
 import { Clock, Shield, Palette, Truck, Target, Eye, CheckCircle } from "lucide-react";
 
 const AboutPage = () => (
   <Layout>
-    <section className="py-20 bg-gradient-dark text-secondary-foreground">
-      <div className="container text-center">
+    <section className="relative py-20 overflow-hidden">
+      <div className="absolute inset-0">
+        <img src="/images/about-hero.jpg" alt="Trophy Collection" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-secondary/85" />
+      </div>
+      <div className="container relative z-10 text-center text-secondary-foreground">
         <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
           About <span className="text-primary">Xpert Awards</span>
         </h1>
@@ -41,9 +44,13 @@ const AboutPage = () => (
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <img src={categoryImages["metal-trophy"]} alt="Metal Trophy" loading="lazy" className="rounded-xl shadow-lg w-full" />
-            <img src={categoryImages["fiber-trophy"]} alt="Fiber Trophy" loading="lazy" className="rounded-xl shadow-lg w-full mt-8" />
+          <div>
+            <img
+              src="/images/about-company.jpg"
+              alt="Xpert Awards Collection"
+              loading="lazy"
+              className="rounded-2xl shadow-2xl w-full"
+            />
           </div>
         </div>
       </div>
