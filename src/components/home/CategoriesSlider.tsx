@@ -3,16 +3,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback } from "react";
 import { CATEGORIES } from "@/lib/constants";
+import { categoryImages } from "@/lib/images";
 import AnimatedSection from "@/components/AnimatedSection";
-
-const proImages: Record<string, string> = {
-  "wooden-trophy": "/images/wooden-trophy-pro.jpg",
-  "acrylic-trophy": "/images/acrylic-trophy-pro.jpg",
-  "fiber-trophy": "/images/fiber-trophy-pro.jpg",
-  "metal-trophy": "/images/metal-trophy-pro.jpg",
-  "sports-medals": "/images/sports-medals-pro.jpg",
-  "corporate-gifts": "/images/corporate-gifts-pro.jpg",
-};
 
 const CategoriesSlider = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start", slidesToScroll: 1 });
@@ -52,7 +44,7 @@ const CategoriesSlider = () => {
                 >
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
-                      src={proImages[cat.slug]}
+                      src={categoryImages[cat.slug]}
                       alt={cat.title}
                       loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"

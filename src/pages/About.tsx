@@ -1,14 +1,20 @@
 import Layout from "@/components/Layout";
-import { Clock, Shield, Palette, Truck, Target, Eye, CheckCircle } from "lucide-react";
+import { categoryImages } from "@/lib/images";
+import { Clock, Shield, Palette, Truck, Target, Eye, CheckCircle, Trophy } from "lucide-react";
 
 const AboutPage = () => (
   <Layout>
-    <section className="relative py-20 overflow-hidden">
-      <div className="absolute inset-0">
-        <img src="/images/about-hero.jpg" alt="Trophy Collection" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-secondary/85" />
+    {/* Hero with custom gradient bg */}
+    <section className="relative py-20 overflow-hidden bg-gradient-to-br from-[hsl(var(--secondary))] via-[hsl(36,20%,12%)] to-[hsl(var(--secondary))]">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary/5 rounded-full -translate-x-1/3 translate-y-1/3" />
       </div>
       <div className="container relative z-10 text-center text-secondary-foreground">
+        <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-4 py-1.5 rounded-full mb-6">
+          <Trophy className="w-4 h-4 text-primary" />
+          <span className="text-primary text-xs font-heading font-medium uppercase tracking-wider">Since 2006</span>
+        </div>
         <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
           About <span className="text-primary">Xpert Awards</span>
         </h1>
@@ -44,13 +50,9 @@ const AboutPage = () => (
               ))}
             </div>
           </div>
-          <div>
-            <img
-              src="/images/about-company.jpg"
-              alt="Xpert Awards Collection"
-              loading="lazy"
-              className="rounded-2xl shadow-2xl w-full"
-            />
+          <div className="grid grid-cols-2 gap-4">
+            <img src={categoryImages["metal-trophy"]} alt="Metal Trophy" loading="lazy" className="rounded-xl shadow-lg w-full" />
+            <img src={categoryImages["fiber-trophy"]} alt="Fiber Trophy" loading="lazy" className="rounded-xl shadow-lg w-full mt-8" />
           </div>
         </div>
       </div>
