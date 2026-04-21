@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Layout from "@/components/Layout";
 import { useParams, Link } from "react-router-dom";
 import { CATEGORIES, WHATSAPP_URL, PHONE_1, PRODUCT_ITEMS } from "@/lib/constants";
@@ -6,11 +6,17 @@ import { categoryImages } from "@/lib/images";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
+const ITEMS_PER_PAGE = 12;
+
 const ProductDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const category = CATEGORIES.find((c) => c.slug === slug);
   const items = slug ? PRODUCT_ITEMS[slug] || [] : [];
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
+
+  const visibleItems = useMemo(() => items.slice(0, visibleCount), [items, visibleCount]);
+  const hasMore = visibleCount < items.length;
 
   const navigate = (dir: number) => {
     if (lightbox === null) return;
