@@ -468,6 +468,14 @@ export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
     { id: "DT-HDFC", name: "Desktop Organizer - HDFC Life", image: "/images/products/corporate/DT-HDFC.jpg", size: 'Revolving Desktop with Watch + Mobile Stand + Memo Pad + Pen' },
     { id: "DT-HIMALAYA", name: "Desktop Organizer - Himalaya", image: "/images/products/corporate/DT-HIMALAYA.jpg", size: 'Watch + Mobile Stand + Dice Calendar + Memo Pad + Pen' },
     { id: "DT-INDUSIND", name: "Desktop Organizer - IndusInd Bank", image: "/images/products/corporate/DT-INDUSIND.jpg", size: 'Cross Flag + Golden Ashoka + Tumbler + Pen' },
+    { id: "DT-JINDAL", name: "Desktop Organizer - Jindal Panther", image: "/images/products/corporate/DT-JINDAL.jpg", size: 'Golden Plastic Ashoka + Flag + Memo Pad + Pen' },
+    { id: "DT-KOTAK", name: "Desktop Organizer - Kotak Life Insurance", image: "/images/products/corporate/DT-KOTAK.jpg", size: 'Watch + Mobile Stand + Memo Pad + Pen' },
+    { id: "DT-LIC", name: "Desktop Organizer - LIC", image: "/images/products/corporate/DT-LIC.jpg", size: 'Watch + Mobile Stand + Memo Pad + Pen' },
+    { id: "DT-LPU", name: "Desktop Organizer - LPU University", image: "/images/products/corporate/DT-LPU.jpg", size: 'Watch + Dice Calendar + Mobile Stand + Memo Pad + Pen' },
+    { id: "DT-MAHINDRA", name: "Desktop Organizer - Mahindra Tractors", image: "/images/products/corporate/DT-MAHINDRA.jpg", size: 'Watch + Mobile Stand + Memopad + Pen' },
+    { id: "DT-PEPSICO", name: "Desktop Organizer - PepsiCo", image: "/images/products/corporate/DT-PEPSICO.jpg", size: 'Watch + Ganesh Ji Murti + Pen' },
+    { id: "DT-SKYJET", name: "Desktop Organizer - Skyjet Airlines", image: "/images/products/corporate/DT-SKYJET.jpg", size: 'Watch + Mobile Stand + Memo Pad + Pen' },
+    { id: "DT-SUNPHARMA", name: "Desktop Organizer - Sun Pharma", image: "/images/products/corporate/DT-SUNPHARMA.jpg", size: 'Watch + Doctor Coat Pen Holder' },
   ],
 };
 
