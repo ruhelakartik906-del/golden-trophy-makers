@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { WHATSAPP_URL } from "@/lib/constants";
-import { heroTrophy } from "@/lib/images";
+import { heroTrophy, woodenTrophy, metalTrophy } from "@/lib/images";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
@@ -12,12 +12,12 @@ const slides = [
     sub: "Custom Awards • Corporate Trophies • Sports Medals",
   },
   {
-    image: "/images/hero-banner.jpg",
+    image: woodenTrophy,
     headline: "Celebrate Success with Premium Awards",
     sub: "Handcrafted Excellence for Every Achievement",
   },
   {
-    image: "/images/about-company.jpg",
+    image: metalTrophy,
     headline: "Bulk Orders at Best Prices",
     sub: "Serving Schools • Corporates • Government Events",
   },

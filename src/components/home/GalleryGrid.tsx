@@ -1,19 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { X } from "lucide-react";
+import { categoryImages } from "@/lib/images";
 import { CATEGORIES } from "@/lib/constants";
 import AnimatedSection from "@/components/AnimatedSection";
 
-const proImages: Record<string, string> = {
-  "wooden-trophy": "/images/wooden-trophy-pro.jpg",
-  "acrylic-trophy": "/images/acrylic-trophy-pro.jpg",
-  "fiber-trophy": "/images/fiber-trophy-pro.jpg",
-  "metal-trophy": "/images/metal-trophy-pro.jpg",
-  "sports-medals": "/images/sports-medals-pro.jpg",
-  "corporate-gifts": "/images/corporate-gifts-pro.jpg",
-};
-
-const images = CATEGORIES.map((c) => ({ src: proImages[c.slug], title: c.title }));
+const images = CATEGORIES.map((c) => ({ src: categoryImages[c.slug], title: c.title }));
 
 const GalleryGrid = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);

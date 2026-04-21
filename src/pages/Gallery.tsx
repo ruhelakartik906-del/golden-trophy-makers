@@ -1,19 +1,11 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
+import { categoryImages } from "@/lib/images";
 import { CATEGORIES } from "@/lib/constants";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Trophy } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
-const proImages: Record<string, string> = {
-  "wooden-trophy": "/images/wooden-trophy-pro.jpg",
-  "acrylic-trophy": "/images/acrylic-trophy-pro.jpg",
-  "fiber-trophy": "/images/fiber-trophy-pro.jpg",
-  "metal-trophy": "/images/metal-trophy-pro.jpg",
-  "sports-medals": "/images/sports-medals-pro.jpg",
-  "corporate-gifts": "/images/corporate-gifts-pro.jpg",
-};
-
-const images = CATEGORIES.map((c) => ({ src: proImages[c.slug], title: c.title }));
+const images = CATEGORIES.map((c) => ({ src: categoryImages[c.slug], title: c.title }));
 
 const GalleryPage = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
@@ -25,12 +17,16 @@ const GalleryPage = () => {
 
   return (
     <Layout>
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0">
-          <img src="/images/hero-banner.jpg" alt="Gallery" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-secondary/85" />
+      <section className="relative py-20 overflow-hidden bg-gradient-to-br from-[hsl(var(--secondary))] via-[hsl(36,20%,12%)] to-[hsl(var(--secondary))]">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full translate-x-1/2 -translate-y-1/2" />
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary/5 rounded-full -translate-x-1/3 translate-y-1/3" />
         </div>
         <div className="container relative z-10 text-center text-secondary-foreground">
+          <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-4 py-1.5 rounded-full mb-6">
+            <Trophy className="w-4 h-4 text-primary" />
+            <span className="text-primary text-xs font-heading font-medium uppercase tracking-wider">Our Work</span>
+          </div>
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
             Our <span className="text-primary">Gallery</span>
           </h1>
