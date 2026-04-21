@@ -428,6 +428,14 @@ export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
     { id: "TT-3494", name: "Table Top Organizer - TT3494", image: "/images/products/corporate/TT-3494.jpg", size: 'Executive Desk Organizer with Clock' },
     { id: "GS-4507", name: "Gift Set - GS4507", image: "/images/products/corporate/GS-4507.jpg", size: 'Notebook A5 + Pen Set' },
     { id: "GS-4515", name: "Gift Set - GS4515", image: "/images/products/corporate/GS-4515.jpg", size: 'Photo Frame 6"x4" + Pen Set' },
+    { id: "GS-4516", name: "Gift Set - GS4516", image: "/images/products/corporate/GS-4516.jpg", size: 'Photo Frame 5"x7" + Pen Set' },
+    { id: "GS-4517", name: "Gift Set - GS4517", image: "/images/products/corporate/GS-4517.jpg", size: 'Big Photo Frame 5"x7" + Pen' },
+    { id: "GS-4525", name: "Gift Set - GS4525", image: "/images/products/corporate/GS-4525.jpg", size: 'Pen + Keychain Set (Silver)' },
+    { id: "GS-4526", name: "Gift Set - GS4526", image: "/images/products/corporate/GS-4526.jpg", size: 'Pen + Keychain Set (Rose Gold)' },
+    { id: "GS-4530", name: "Gift Set - GS4530", image: "/images/products/corporate/GS-4530.jpg", size: 'Pen + Leather Keychain Set (Black)' },
+    { id: "GS-4531", name: "Gift Set - GS4531", image: "/images/products/corporate/GS-4531.jpg", size: 'Pen + Leather Keychain Set (Brown)' },
+    { id: "GS-4532", name: "Gift Set - GS4532", image: "/images/products/corporate/GS-4532.jpg", size: 'Card Holder + Pen Set (Red)' },
+    { id: "GS-4533", name: "Gift Set - GS4533", image: "/images/products/corporate/GS-4533.jpg", size: 'Wallet + Pen Set (Checkered)' },
   ],
 };
 
