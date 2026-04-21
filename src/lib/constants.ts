@@ -444,6 +444,14 @@ export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
     { id: "GS-4556", name: "Gift Set - GS4556", image: "/images/products/corporate/GS-4556.jpg", size: 'Card Holder + Pen + Keychain (Black)' },
     { id: "GS-4557", name: "Gift Set - GS4557", image: "/images/products/corporate/GS-4557.jpg", size: 'Notebook A5 + Pen + Keychain (Orange)' },
     { id: "GS-4558", name: "Gift Set - GS4558", image: "/images/products/corporate/GS-4558.jpg", size: 'Notebook A5 + Pen + Keychain (Blue)' },
+    { id: "GS-4565", name: "Gift Set - GS4565", image: "/images/products/corporate/GS-4565.jpg", size: 'Notebook A5 + Card Holder + Pen + Keychain' },
+    { id: "GS-4566", name: "Gift Set - GS4566", image: "/images/products/corporate/GS-4566.jpg", size: 'Notebook A5 + Card Holder + Pen + Keychain (Brown)' },
+    { id: "GS-4567", name: "Gift Set - GS4567", image: "/images/products/corporate/GS-4567.jpg", size: 'Notebook A5 + Card Holder + Pen + Keychain (Grey)' },
+    { id: "GS-4568", name: "Gift Set - GS4568", image: "/images/products/corporate/GS-4568.jpg", size: 'Notebook A5 + Card Holder + Pen + Keychain (Navy)' },
+    { id: "GS-4569", name: "Gift Set - GS4569", image: "/images/products/corporate/GS-4569.jpg", size: 'Notebook A5 + Card Holder + Pen + Keychain (Tan)' },
+    { id: "GS-4570", name: "Gift Set - GS4570", image: "/images/products/corporate/GS-4570.jpg", size: 'Notebook A5 + Card Holder + Pen + Keychain (Beige)' },
+    { id: "GS-4571", name: "Gift Set - GS4571", image: "/images/products/corporate/GS-4571.jpg", size: 'Notebook A5 + Card Holder + Pen + Keychain (Red)' },
+    { id: "GS-4572", name: "Gift Set - GS4572", image: "/images/products/corporate/GS-4572.jpg", size: 'Notebook A5 + Card Holder + Pen + Keychain (Blue)' },
   ],
 };
 
