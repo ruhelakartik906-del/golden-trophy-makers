@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { WHATSAPP_URL } from "@/lib/constants";
-import { heroTrophy, acrylicTrophy, metalTrophy } from "@/lib/images";
+import { heroTrophy } from "@/lib/images";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
@@ -12,7 +12,7 @@ const slides = [
     sub: "Custom Awards • Corporate Trophies • Sports Medals",
   },
   {
-    image: "/images/banner.png",
+    image: "/images/hero-banner.jpg",
     headline: "Celebrate Success with Premium Awards",
     sub: "Handcrafted Excellence for Every Achievement",
   },
@@ -97,7 +97,6 @@ const HeroSlider = () => {
         </div>
       </div>
 
-      {/* Nav arrows */}
       <button onClick={prev} className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-secondary/50 backdrop-blur-sm text-secondary-foreground p-2 sm:p-3 rounded-full hover:bg-primary transition-colors" aria-label="Previous slide">
         <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
       </button>
@@ -105,7 +104,6 @@ const HeroSlider = () => {
         <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
       </button>
 
-      {/* Dots */}
       <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2 sm:gap-3">
         {slides.map((_, i) => (
           <button

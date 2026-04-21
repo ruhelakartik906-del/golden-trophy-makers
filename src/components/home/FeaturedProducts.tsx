@@ -3,10 +3,18 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { CATEGORIES, WHATSAPP_URL } from "@/lib/constants";
-import { categoryImages } from "@/lib/images";
 import AnimatedSection from "@/components/AnimatedSection";
 
-const products = CATEGORIES.map((c) => ({ title: c.title, slug: c.slug, image: categoryImages[c.slug], material: c.material }));
+const proImages: Record<string, string> = {
+  "wooden-trophy": "/images/wooden-trophy-pro.jpg",
+  "acrylic-trophy": "/images/acrylic-trophy-pro.jpg",
+  "fiber-trophy": "/images/fiber-trophy-pro.jpg",
+  "metal-trophy": "/images/metal-trophy-pro.jpg",
+  "sports-medals": "/images/sports-medals-pro.jpg",
+  "corporate-gifts": "/images/corporate-gifts-pro.jpg",
+};
+
+const products = CATEGORIES.map((c) => ({ title: c.title, slug: c.slug, image: proImages[c.slug], material: c.material }));
 
 const FeaturedProducts = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });

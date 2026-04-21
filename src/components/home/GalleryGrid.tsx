@@ -1,11 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { X } from "lucide-react";
-import { categoryImages } from "@/lib/images";
 import { CATEGORIES } from "@/lib/constants";
 import AnimatedSection from "@/components/AnimatedSection";
 
-const images = CATEGORIES.map((c) => ({ src: categoryImages[c.slug], title: c.title }));
+const proImages: Record<string, string> = {
+  "wooden-trophy": "/images/wooden-trophy-pro.jpg",
+  "acrylic-trophy": "/images/acrylic-trophy-pro.jpg",
+  "fiber-trophy": "/images/fiber-trophy-pro.jpg",
+  "metal-trophy": "/images/metal-trophy-pro.jpg",
+  "sports-medals": "/images/sports-medals-pro.jpg",
+  "corporate-gifts": "/images/corporate-gifts-pro.jpg",
+};
+
+const images = CATEGORIES.map((c) => ({ src: proImages[c.slug], title: c.title }));
 
 const GalleryGrid = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
@@ -46,7 +54,6 @@ const GalleryGrid = () => {
         </div>
       </div>
 
-      {/* Lightbox */}
       {lightbox !== null && (
         <div className="fixed inset-0 z-50 bg-secondary/90 flex items-center justify-center p-4" onClick={() => setLightbox(null)}>
           <button className="absolute top-6 right-6 text-secondary-foreground hover:text-primary" aria-label="Close">
