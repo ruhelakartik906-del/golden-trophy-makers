@@ -460,6 +460,14 @@ export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
     { id: "GS-4586", name: "Gift Set - GS4586", image: "/images/products/corporate/GS-4586.jpg", size: 'Pen + Cufflinks + Brooch + Tie Pin' },
     { id: "GS-4587", name: "Gift Set - GS4587", image: "/images/products/corporate/GS-4587.jpg", size: 'Perfume + Pen + Cufflinks + Brooch + Tie Pin' },
     { id: "GS-AC01", name: "Desktop Organizer - AC01", image: "/images/products/corporate/GS-AC01.jpg", size: 'Desktop with Watch + Mobile Stand + Pen Holder' },
+    { id: "DT-AMITY", name: "Desktop Organizer - Amity", image: "/images/products/corporate/DT-AMITY.jpg", size: 'Watch + Mobile Stand + Dice Calendar + Memo Pad + Pen' },
+    { id: "DT-DABUR", name: "Desktop Organizer - Dabur", image: "/images/products/corporate/DT-DABUR.jpg", size: 'Ganesh Ji Murti + Mobile Stand' },
+    { id: "DT-FBANK", name: "Desktop Organizer - Federal Bank", image: "/images/products/corporate/DT-FBANK.jpg", size: 'Flag + Ashoka Pillar + Mobile Stand + Memo Pad + Pen' },
+    { id: "DT-FORTIS", name: "Desktop Organizer - Fortis", image: "/images/products/corporate/DT-FORTIS.jpg", size: 'Watch + Dice Calendar + Mobile Stand + Pen' },
+    { id: "DT-GPAY", name: "Desktop Organizer - Google Pay", image: "/images/products/corporate/DT-GPAY.jpg", size: 'Watch + Mobile Stand + Memo Pad + Pen' },
+    { id: "DT-HDFC", name: "Desktop Organizer - HDFC Life", image: "/images/products/corporate/DT-HDFC.jpg", size: 'Revolving Desktop with Watch + Mobile Stand + Memo Pad + Pen' },
+    { id: "DT-HIMALAYA", name: "Desktop Organizer - Himalaya", image: "/images/products/corporate/DT-HIMALAYA.jpg", size: 'Watch + Mobile Stand + Dice Calendar + Memo Pad + Pen' },
+    { id: "DT-INDUSIND", name: "Desktop Organizer - IndusInd Bank", image: "/images/products/corporate/DT-INDUSIND.jpg", size: 'Cross Flag + Golden Ashoka + Tumbler + Pen' },
   ],
 };
 
