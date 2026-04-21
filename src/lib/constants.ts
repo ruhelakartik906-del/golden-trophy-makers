@@ -476,6 +476,8 @@ export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
     { id: "DT-PEPSICO", name: "Desktop Organizer - PepsiCo", image: "/images/products/corporate/DT-PEPSICO.jpg", size: 'Watch + Ganesh Ji Murti + Pen' },
     { id: "DT-SKYJET", name: "Desktop Organizer - Skyjet Airlines", image: "/images/products/corporate/DT-SKYJET.jpg", size: 'Watch + Mobile Stand + Memo Pad + Pen' },
     { id: "DT-SUNPHARMA", name: "Desktop Organizer - Sun Pharma", image: "/images/products/corporate/DT-SUNPHARMA.jpg", size: 'Watch + Doctor Coat Pen Holder' },
+    { id: "DT-SUZUKI", name: "Desktop Organizer - Suzuki", image: "/images/products/corporate/DT-SUZUKI.jpg", size: 'Watch + Flag + Ashoka Pillar + Mobile Stand + Memo Pad + Pen' },
+    { id: "DT-WIPRO", name: "Desktop Organizer - Wipro", image: "/images/products/corporate/DT-WIPRO.jpg", size: 'Watch + Mobile Stand + Memo Pad + Pen' },
   ],
 };
 
