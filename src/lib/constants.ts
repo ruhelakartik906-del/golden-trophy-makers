@@ -43,6 +43,31 @@ export const CATEGORIES = [
   },
 ] as const;
 
+export interface ProductItem {
+  id: string;
+  name: string;
+  image: string;
+  size: string;
+}
+
+export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
+  "wooden-trophy": [
+    { id: "TRO-W1", name: "TRO - W1", image: "/images/products/wooden/TRO-W1.jpg", size: '11x6" inch' },
+    { id: "TRO-W2", name: "TRO - W2", image: "/images/products/wooden/TRO-W2.jpg", size: '7x9" inch' },
+    { id: "TRO-W3", name: "TRO - W3", image: "/images/products/wooden/TRO-W3.jpg", size: '8" inch' },
+    { id: "TRO-W5", name: "TRO - W5", image: "/images/products/wooden/TRO-W5.jpg", size: '9"X9" inch' },
+    { id: "TRO-W7", name: "TRO - W7", image: "/images/products/wooden/TRO-W7.jpg", size: '10x4" inch' },
+    { id: "TRO-W8", name: "TRO - W8", image: "/images/products/wooden/TRO-W8.jpg", size: '10"X10" inch' },
+    { id: "TRO-W9", name: "TRO - W9", image: "/images/products/wooden/TRO-W9.jpg", size: '10"X4.5" inch' },
+    { id: "TRO-W10", name: "TRO - W10", image: "/images/products/wooden/TRO-W10.jpg", size: '7"X9" inch' },
+  ],
+  "acrylic-trophy": [],
+  "fiber-trophy": [],
+  "metal-trophy": [],
+  "sports-medals": [],
+  "corporate-gifts": [],
+};
+
 export const CITIES = [
   { slug: "delhi", name: "Delhi" },
   { slug: "noida", name: "Noida" },
