@@ -1,11 +1,19 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
-import { categoryImages } from "@/lib/images";
 import { CATEGORIES } from "@/lib/constants";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
-const images = CATEGORIES.map((c) => ({ src: categoryImages[c.slug], title: c.title }));
+const proImages: Record<string, string> = {
+  "wooden-trophy": "/images/wooden-trophy-pro.jpg",
+  "acrylic-trophy": "/images/acrylic-trophy-pro.jpg",
+  "fiber-trophy": "/images/fiber-trophy-pro.jpg",
+  "metal-trophy": "/images/metal-trophy-pro.jpg",
+  "sports-medals": "/images/sports-medals-pro.jpg",
+  "corporate-gifts": "/images/corporate-gifts-pro.jpg",
+};
+
+const images = CATEGORIES.map((c) => ({ src: proImages[c.slug], title: c.title }));
 
 const GalleryPage = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
@@ -17,8 +25,12 @@ const GalleryPage = () => {
 
   return (
     <Layout>
-      <section className="py-20 bg-gradient-dark text-secondary-foreground">
-        <div className="container text-center">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="/images/hero-banner.jpg" alt="Gallery" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-secondary/85" />
+        </div>
+        <div className="container relative z-10 text-center text-secondary-foreground">
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
             Our <span className="text-primary">Gallery</span>
           </h1>
@@ -50,7 +62,6 @@ const GalleryPage = () => {
         </div>
       </section>
 
-      {/* Lightbox */}
       {lightbox !== null && (
         <div className="fixed inset-0 z-50 bg-secondary/90 flex items-center justify-center p-4" onClick={() => setLightbox(null)}>
           <button className="absolute top-6 right-6 text-secondary-foreground hover:text-primary z-10" aria-label="Close" onClick={() => setLightbox(null)}>
