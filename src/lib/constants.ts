@@ -452,6 +452,14 @@ export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
     { id: "GS-4570", name: "Gift Set - GS4570", image: "/images/products/corporate/GS-4570.jpg", size: 'Notebook A5 + Card Holder + Pen + Keychain (Beige)' },
     { id: "GS-4571", name: "Gift Set - GS4571", image: "/images/products/corporate/GS-4571.jpg", size: 'Notebook A5 + Card Holder + Pen + Keychain (Red)' },
     { id: "GS-4572", name: "Gift Set - GS4572", image: "/images/products/corporate/GS-4572.jpg", size: 'Notebook A5 + Card Holder + Pen + Keychain (Blue)' },
+    { id: "GS-4580", name: "Gift Set - GS4580", image: "/images/products/corporate/GS-4580.jpg", size: 'Notebook A5 + Table Clock + Wallet + Card Holder + Keychain + Pen' },
+    { id: "GS-4581", name: "Gift Set - GS4581", image: "/images/products/corporate/GS-4581.jpg", size: 'Notebook A5 + Table Calendar + Pen' },
+    { id: "GS-4582", name: "Gift Set - GS4582", image: "/images/products/corporate/GS-4582.jpg", size: 'Notebook A5 + Table Calendar + Pen (Blue)' },
+    { id: "GS-4584", name: "Gift Set - GS4584", image: "/images/products/corporate/GS-4584.jpg", size: 'Notebook A5 + Temperature Flask + Pen' },
+    { id: "GS-4585", name: "Gift Set - GS4585", image: "/images/products/corporate/GS-4585.jpg", size: 'Notebook A5 + Photo Frame + Mobile Stand + Keychain + Pen' },
+    { id: "GS-4586", name: "Gift Set - GS4586", image: "/images/products/corporate/GS-4586.jpg", size: 'Pen + Cufflinks + Brooch + Tie Pin' },
+    { id: "GS-4587", name: "Gift Set - GS4587", image: "/images/products/corporate/GS-4587.jpg", size: 'Perfume + Pen + Cufflinks + Brooch + Tie Pin' },
+    { id: "GS-AC01", name: "Desktop Organizer - AC01", image: "/images/products/corporate/GS-AC01.jpg", size: 'Desktop with Watch + Mobile Stand + Pen Holder' },
   ],
 };
 
