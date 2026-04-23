@@ -1,9 +1,6 @@
 import { Clock, Shield, Palette, Truck, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimatedSection from "@/components/AnimatedSection";
-import aboutWooden from "@/assets/about-wooden.jpg";
-import aboutAcrylic from "@/assets/about-acrylic.jpg";
-import aboutMetal from "@/assets/about-metal.jpg";
 import awardsShowcase from "@/assets/awards-showcase.jpg";
 
 const stats = [
