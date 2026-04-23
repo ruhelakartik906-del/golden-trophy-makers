@@ -104,12 +104,12 @@ const ProductDetail = () => {
                       onClick={() => setLightbox(i)}
                       className="group bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border w-full text-left"
                     >
-                      <div className="aspect-square overflow-hidden bg-muted">
+                      <div className="overflow-hidden bg-muted">
                         <img
                           src={item.image}
                           alt={item.name}
                           loading="lazy"
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                          className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
                       <div className="p-4">
