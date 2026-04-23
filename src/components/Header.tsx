@@ -30,7 +30,7 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between py-2 md:py-3">
         <Link to="/" className="flex items-center">
-          <img src="/images/logo.png" alt="Xpert Awards - Corporate Gift, Trophies, Custom Awards" className="h-16 md:h-20 w-auto" />
+          <img src="/images/logo.png" alt="Xpert Awards - Corporate Gift, Trophies, Custom Awards" className="h-20 md:h-24 w-auto" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">
