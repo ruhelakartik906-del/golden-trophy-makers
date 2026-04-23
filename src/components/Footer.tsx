@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 import { PHONE_1, PHONE_2, EMAIL, ADDRESS } from "@/lib/constants";
 
 const Footer = () => (
@@ -8,21 +8,18 @@ const Footer = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
         {/* Logo & About */}
         <div className="sm:col-span-2 md:col-span-1">
-          <div className="inline-flex items-center gap-3 mb-5 bg-white rounded-xl px-6 py-4">
-            <img src="/images/logo.png" alt="Xpert Awards" className="h-16 w-auto" />
+          <div className="inline-flex items-center gap-3 mb-5 bg-white rounded-2xl px-3 py-2">
+            <img src="/images/logo.png" alt="Xpert Awards" className="h-20 w-auto" />
           </div>
           <p className="text-white/70 text-sm leading-relaxed mb-6">
             Creating exceptional awards and recognition pieces that celebrate achievements and inspire excellence.
           </p>
           <div className="flex gap-3">
-            <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-colors">
+            <a href="https://www.facebook.com/share/1EDMzMMYmU/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-colors">
               <Facebook className="w-4 h-4" />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-colors">
+            <a href="https://www.instagram.com/xpertawards_?igsh=dnNxeTVpdDMwZzhs" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-colors">
               <Instagram className="w-4 h-4" />
-            </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-colors">
-              <Linkedin className="w-4 h-4" />
             </a>
           </div>
         </div>
