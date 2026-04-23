@@ -5,7 +5,7 @@ import AboutCompany from "@/components/home/AboutCompany";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import WorkProcess from "@/components/home/WorkProcess";
-import GalleryGrid from "@/components/home/GalleryGrid";
+
 import ClientsSection from "@/components/home/ClientsSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import HomeFAQ from "@/components/home/HomeFAQ";
