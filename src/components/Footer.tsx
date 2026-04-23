@@ -8,8 +8,8 @@ const Footer = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
         {/* Logo & About */}
         <div className="sm:col-span-2 md:col-span-1">
-          <div className="inline-flex items-center gap-3 mb-5 bg-white/10 rounded-xl px-4 py-3">
-            <img src="/images/logo.png" alt="Xpert Awards" className="h-12 w-auto" />
+          <div className="inline-flex items-center gap-3 mb-5 bg-white rounded-xl px-6 py-4">
+            <img src="/images/logo.png" alt="Xpert Awards" className="h-16 w-auto" />
           </div>
           <p className="text-white/70 text-sm leading-relaxed mb-6">
             Creating exceptional awards and recognition pieces that celebrate achievements and inspire excellence.
