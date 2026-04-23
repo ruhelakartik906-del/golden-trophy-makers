@@ -1,7 +1,10 @@
 import { Clock, Shield, Palette, Truck, CheckCircle } from "lucide-react";
-import { categoryImages } from "@/lib/images";
 import { Link } from "react-router-dom";
 import AnimatedSection from "@/components/AnimatedSection";
+import aboutWooden from "@/assets/about-wooden.jpg";
+import aboutAcrylic from "@/assets/about-acrylic.jpg";
+import aboutMetal from "@/assets/about-metal.jpg";
+import awardsShowcase from "@/assets/awards-showcase.jpg";
 
 const stats = [
   { icon: Clock, label: "Years Experience", value: "18+" },
@@ -24,14 +27,20 @@ const AboutCompany = () => (
         {/* Image Grid */}
         <AnimatedSection direction="left">
           <div className="relative">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <img src={categoryImages["wooden-trophy"]} alt="Wooden Trophy" loading="lazy" className="rounded-2xl shadow-xl w-full h-48 sm:h-64 object-cover" />
-                <img src={categoryImages["metal-trophy"]} alt="Metal Trophy" loading="lazy" className="rounded-2xl shadow-xl w-full h-36 sm:h-48 object-cover" />
+            <div className="grid grid-cols-2 gap-3">
+              {/* Main showcase image - spans full width */}
+              <div className="col-span-2 rounded-2xl overflow-hidden shadow-xl">
+                <img src={awardsShowcase} alt="Awards & Trophies Showcase" loading="lazy" className="w-full h-56 sm:h-72 object-cover" />
               </div>
-              <div className="space-y-4 pt-8">
-                <img src={categoryImages["acrylic-trophy"]} alt="Acrylic Trophy" loading="lazy" className="rounded-2xl shadow-xl w-full h-36 sm:h-48 object-cover" />
-                <img src={categoryImages["corporate-gifts"]} alt="Corporate Gifts" loading="lazy" className="rounded-2xl shadow-xl w-full h-48 sm:h-64 object-cover" />
+              {/* 3 smaller images */}
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img src={aboutWooden} alt="Wooden Trophy" loading="lazy" className="w-full h-40 sm:h-48 object-cover" />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg row-span-2">
+                <img src={aboutAcrylic} alt="Acrylic Trophy" loading="lazy" className="w-full h-full object-cover" />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img src={aboutMetal} alt="Metal Trophy" loading="lazy" className="w-full h-40 sm:h-48 object-cover" />
               </div>
             </div>
             {/* Floating badge */}
