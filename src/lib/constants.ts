@@ -52,7 +52,6 @@ export interface ProductItem {
 
 export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
   "wooden-trophy": [
-    { id: "TRO-W24", name: "TRO - W24", image: "/images/products/wooden/TRO-W24.jpg", size: '10" inch' },
     { id: "TRO-W1", name: "TRO - W1", image: "/images/products/wooden/TRO-W1.jpg", size: '11x6" inch' },
     { id: "TRO-W2", name: "TRO - W2", image: "/images/products/wooden/TRO-W2.jpg", size: '7x9" inch' },
     { id: "TRO-W3", name: "TRO - W3", image: "/images/products/wooden/TRO-W3.jpg", size: '8" inch' },
