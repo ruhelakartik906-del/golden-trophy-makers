@@ -413,7 +413,6 @@ export const PRODUCT_ITEMS: Record<string, ProductItem[]> = {
     { id: "TRO-M1105", name: "TRO - M1105", image: "/images/products/metal/TRO-M1105.jpg", size: 'A 14.5" B 12.75" C 12" inch' },
     { id: "TRO-M1114", name: "TRO - M1114", image: "/images/products/metal/TRO-M1114.jpg", size: '16" inch' },
     { id: "TRO-M1117", name: "TRO - M1117", image: "/images/products/metal/TRO-M1117.jpg", size: 'A 16.25" B 15.25" C 14" inch' },
-    { id: "TRO-M1120", name: "TRO - M1120", image: "/images/products/metal/TRO-M1120.jpg", size: '13.5" inch' },
     { id: "TRO-M1124", name: "TRO - M1124", image: "/images/products/metal/TRO-M1124.jpg", size: '13.5" inch' },
     { id: "TRO-M2216", name: "TRO - M2216", image: "/images/products/metal/TRO-M2216.jpg", size: '11" inch' },
     { id: "TRO-M2218", name: "TRO - M2218", image: "/images/products/metal/TRO-M2218.jpg", size: '12.5" inch' },
