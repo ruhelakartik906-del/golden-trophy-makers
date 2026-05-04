@@ -22,14 +22,14 @@ const ProductsPage = () => (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {CATEGORIES.map((cat) => (
             <Link key={cat.slug} to={`/products/${cat.slug}`} className="group bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border block">
-              <div className="aspect-square overflow-hidden">
+              <div className="aspect-square overflow-hidden bg-white">
                 <img
                   src={categoryImages[cat.slug]}
                   alt={cat.title}
                   loading="lazy"
                   width={800}
                   height={800}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
