@@ -46,7 +46,7 @@ const HomeFAQ = () => (
             Have questions about our trophies, ordering process, or delivery? Find answers to the most common questions below.
           </p>
           <p className="text-muted-foreground text-sm">
-            Can't find your answer? <a href="/contact" className="text-primary font-medium hover:underline">Contact us</a> or message us on <a href="https://wa.me/919953551576" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">WhatsApp</a>.
+            Can't find your answer? <a href="/contact" className="text-primary font-medium hover:underline">Contact us</a> or message us on <a href="https://wa.me/919310651066" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">WhatsApp</a>.
           </p>
         </AnimatedSection>
 
