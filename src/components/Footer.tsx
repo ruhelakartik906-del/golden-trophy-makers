@@ -50,13 +50,13 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-bold text-lg mb-5">Contact Info</h4>
           <div className="space-y-4 text-sm">
-            <a href={`tel:${PHONE_2}`} className="flex items-center gap-3 text-white/70 hover:text-primary transition-colors">
-              <Phone className="w-4 h-4 text-primary shrink-0" />
-              +91 {PHONE_2}
-            </a>
             <a href={`tel:${PHONE_1}`} className="flex items-center gap-3 text-white/70 hover:text-primary transition-colors">
               <Phone className="w-4 h-4 text-primary shrink-0" />
               +91 {PHONE_1}
+            </a>
+            <a href={`tel:${PHONE_2}`} className="flex items-center gap-3 text-white/70 hover:text-primary transition-colors">
+              <Phone className="w-4 h-4 text-primary shrink-0" />
+              +91 {PHONE_2}
             </a>
             <a href={`mailto:${EMAIL}`} className="flex items-center gap-3 text-white/70 hover:text-primary transition-colors">
               <Mail className="w-4 h-4 text-primary shrink-0" />

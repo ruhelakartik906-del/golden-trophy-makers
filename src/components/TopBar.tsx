@@ -5,12 +5,12 @@ const TopBar = () => (
   <div className="bg-secondary text-secondary-foreground text-xs hidden md:block border-b border-border/50">
     <div className="container flex items-center justify-between py-1.5">
       <div className="flex items-center gap-5">
-        <a href={`tel:${PHONE_1}`} className="flex items-center gap-1.5 hover:text-primary transition-colors">
-          <Phone className="w-3 h-3 text-primary" /> +91 {PHONE_1}
-        </a>
-        <span className="text-border">|</span>
         <a href={`tel:${PHONE_2}`} className="flex items-center gap-1.5 hover:text-primary transition-colors">
           <Phone className="w-3 h-3 text-primary" /> +91 {PHONE_2}
+        </a>
+        <span className="text-border">|</span>
+        <a href={`tel:${PHONE_1}`} className="flex items-center gap-1.5 hover:text-primary transition-colors">
+          <Phone className="w-3 h-3 text-primary" /> +91 {PHONE_1}
         </a>
         <span className="text-border">|</span>
         <a href={`mailto:${EMAIL}`} className="flex items-center gap-1.5 hover:text-primary transition-colors">

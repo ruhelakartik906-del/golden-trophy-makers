@@ -65,11 +65,11 @@ const ContactPage = () => {
             <div>
               <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Contact Information</h2>
               <div className="space-y-5 mb-8">
-                <a href={`tel:${PHONE_1}`} className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors">
-                  <Phone className="w-5 h-5 mt-0.5 text-primary" /> +91 {PHONE_1}
-                </a>
                 <a href={`tel:${PHONE_2}`} className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors">
                   <Phone className="w-5 h-5 mt-0.5 text-primary" /> +91 {PHONE_2}
+                </a>
+                <a href={`tel:${PHONE_1}`} className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors">
+                  <Phone className="w-5 h-5 mt-0.5 text-primary" /> +91 {PHONE_1}
                 </a>
                 <a href={`mailto:${EMAIL}`} className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors">
                   <Mail className="w-5 h-5 mt-0.5 text-primary" /> {EMAIL}
