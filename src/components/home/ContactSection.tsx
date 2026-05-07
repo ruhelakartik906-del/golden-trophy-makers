@@ -9,7 +9,7 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = `Name: ${form.name}%0APhone: ${form.phone}%0AMessage: ${form.message}`;
-    window.open(`https://wa.me/91${PHONE_1}?text=${text}`, "_blank");
+    window.open(`https://wa.me/91${PHONE_2}?text=${text}`, "_blank");
     toast.success("Opening WhatsApp with your inquiry!");
     setForm({ name: "", phone: "", message: "" });
   };
