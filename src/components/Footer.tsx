@@ -18,7 +18,7 @@ const Footer = () => (
             <a href="https://www.facebook.com/share/1EDMzMMYmU/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-colors">
               <Facebook className="w-4 h-4" />
             </a>
-            <a href="https://www.instagram.com/xpertawards_?igsh=dnNxeTVpdDMwZzhs" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-colors">
+            <a href="https://www.instagram.com/xpertawards_?utm_source=qr&igsh=dnNxeTVpdDMwZzhs" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-colors">
               <Instagram className="w-4 h-4" />
             </a>
           </div>
